@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Handwriting Recognition</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
@@ -39,6 +41,7 @@
         canvas.setAttribute("height", canvasHeight);
         canvas.setAttribute("id", canvasId);
         canvas.style.backgroundColor = canvasBackgroundColor;
+        canvas.style.maxWidth = "100%";
         canvasBox.appendChild(canvas);
         if (typeof G_vmlCanvasManager != 'undefined') {
             canvas = G_vmlCanvasManager.initElement(canvas);
